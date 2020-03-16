@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+ul#menu li{
+	font-family: Palatino;
+	font-size: 25px;
+	margin: 10px;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	padding: 0 30%;
+	color: black;
+}
+
+ul#menu li a{
+	color: red;
+	font-size: 35px;
+}
+

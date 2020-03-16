@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+h2{
+	text-align: center;
+}
+
+p#required{
+	text-align: center;
+}
+
+form{
+	margin-left: 300px;
+	
+}
+
+aside { 
+   display: block;
+   position: absolute;
+   color: darkturquoise;
+   width: 300px;
+   font-size: 15px;
+   border: solid darkturquoise;
+   background-color: black;
+   
+  
+}
+aside h1{
+	font-size: 40px;
+	padding: 0px;
+	text-decoration: underline;
+
+}
+
+dl {
+   text-align: left;
+   padding: 0px 15px;
+}
+
+dt {
+   font-size: 1.2em;
+   font-weight: bold;
+   border-top: 1px solid yellow;
+   text-align: center;
+}
+
+dd {
+   margin: 10px 0px;
+   font-size: 18px;
+   
+}
+
+dd p {
+   margin: 0px 0px 5px 10px;
+   text-align: center;
+}
+

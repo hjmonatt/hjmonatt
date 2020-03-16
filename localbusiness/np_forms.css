@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+
+/*
+   Local Business
+   Native Palm
+
+   Appointment Form Style Sheet
+   Other Styles
+   
+   Author: Heather Monatt
+   Date: 5/25/2019
+  
+   Filename:         np_forms.css
+
+*/
+
+
+fieldset{
+	
+	width: 325px;
+	margin: 9px 0px 0px 0px; 
+	float: left;
+	
+
+}
+
+.blockLabel{
+	
+	display: block;
+	position: relative;
+	font-size: 15px;
+	margin: 10px 0px;
+
+}
+
+.blockLabel input{
+	
+	position: absolute;
+	left: 150px;
+	margin-bottom: 50px;
+	
+
+}
+
+.blockLabel select{
+	width: 100px;
+	position: absolute;
+	left: 150px;
+	
+	
+}
+
+.blockLabel span{
+	position: absolute;
+	left: 150px;
+	margin-left: 5px;
+
+}
+
+.blockLabel span input{
+	position: relative;
+	display: block;
+	float: left;
+	left: 45px;
+	top: 0px;
+	margin-right: 30px;
+
+}
+.blockLabel span label{
+	position: relative;
+	float: left;
+	left: 20px;
+}
+
+.newline{
+	margin-top: 10px;
+	float: left;
+	clear: left;
+	
+}
+
+footer{
+	margin-bottom: 10px;
+	clear: both;
+
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input:focus:invalid {
+   background: rgb(255, 232, 233) url(np_stop.png) 
+					bottom right no-repeat;
+   background-size: contain;
+}
+
+input:focus:valid {
+   background: rgb(220, 255, 220) url(np_go.png) 
+				bottom right no-repeat;
+   background-size: contain;
+}
+
+form#cForm > fieldset{
+	border-radius: 20px;
+	font-size: 0.85em;
+	padding:10px;
+	margin: 10px;
+}
+
+
+form{
+	padding: 10px;
+	font-family: Verdana;
+
+}
+
+p#required{
+	font-family: Verdana;
+	font-size: 14px;
+	padding-left: 20px;
+	
+}
+
+
+
+
+
+
+

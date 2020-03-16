@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* =============================================
+	Hypertext links
+   =============================================
+*/
+
+
+a:visited {
+	color: darkturquoise;
+}
+a:hover {
+	color: red;
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover, a:active {
+	outline: 0;
+}
+
+
+caption{
+	padding: 15px;
+	margin: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	
+}
+
+img.ceremony{
+	width: 100%;
+	margin-bottom: 10px;
+	border: 3px solid black;
+
+	
+}
+
+table{
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+table, th, td{
+	border: 2px solid white;
+	text-align: center;
+	box-shadow: inset 0px 0px 15px;
+}
+	
+th, td {
+	padding: 10px;
+	font-weight: bold;
+	
+}
+th{
+	font-size: 24px;
+}
+
+td{
+	font-size: 18px;
+}
+
+tfoot{
+	background-color: black;
+	color: white;
+}
+thead{
+	background-color: Black;
+	color: yellow;
+}
+tbody{
+	background-color: black;
+	color: darkturquoise;
+}
+tbody th{
+	background-color: black;
+	color: red;
+}
