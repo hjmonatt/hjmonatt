@@ -1,0 +1,80 @@
+/** Main Div **/
+#main {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: black;
+
+}
+
+/** Navbar **/
+.navbar a:hover {
+    background: hotpink;
+    color: black;
+
+}
+
+/** Image Outreach **/
+#outreach {
+    padding-right: 30px;
+}
+
+/** Image Article2 **/
+#article2 {
+    padding-left: 30px;
+}
+
+/** Images **/
+#images {
+    margin-left: 50px;
+    alignment: center;
+}
+
+/** Body **/
+body {
+    margin: 0 150px;
+    background-color: darkgray;
+}
+
+/** h1 Elements **/
+h1 {
+    color: hotpink;
+    text-align: center;
+}
+
+/** h2 Elements **/
+h2 {
+    color: hotpink;
+    text-align: center;
+}
+
+/** h5 Elements **/
+h5 {
+    color: mediumpurple;
+    text-align: center;
+}
+
+/** p Elements **/
+p{
+    color: white;
+
+}
+
+/** Bio Blurb **/
+#bio-blurb {
+    padding-left: 50px;
+}
+
+/** Responsive **/
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .linkOne{
+        margin:5px;
+    }
+    .linkOne{
+        padding: 5px 10px;
+    }
+}
+
+
