@@ -1,0 +1,65 @@
+/** h1 and h2 Elements **/
+h1, h2 {
+    color: hotpink;
+}
+
+/** p Elements **/
+p {
+    color: white;
+}
+
+/** Links **/
+.links{
+    color: yellow;
+}
+
+/** Image **/
+img {
+    float: left;
+
+}
+
+/** Heading Div **/
+#heading{
+    padding-top: 50px;
+    text-align: center;
+}
+
+/** Bold Elements **/
+b {
+    color: mediumpurple;
+}
+
+/** Listed Elements **/
+ul {
+    list-style-type: circle;
+    color: white;
+}
+
+/** Main Div **/
+#main {
+    background-color: black;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+/** Body **/
+body {
+    margin: 0 150px;
+    background-color: gray;
+}
+
+/** Responsive **/
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .linkOne{
+        margin:5px;
+    }
+    .linkOne{
+        padding: 5px 10px;
+    }
+}
+
+

@@ -1,0 +1,65 @@
+h1{
+    color: hotpink;
+}
+
+.bg-primary-color {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    background-color: gray;
+    padding: 0;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: hotpink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position*/
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index:100;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: hotpink;
+    color: black;
+
+}
+
+
+/*Logo*/
+#logo {
+    font-size: large;
+    float: right;
+    display: block;
+    color: hotpink;
+    text-decoration: none;
+    margin-bottom: 0;
+
+}
+
+#logo:hover{
+    color: black;
+}
+
+.navbar a:hover {
+    background: hotpink;
+    color: black;
+
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/guestbook.css">
+    <title>Heather's Guest Book</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="images/guestbookCircle.jpg">
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+    <!-- Jumbotron header -->
+    <div class="jumbotron jumbotron-fluid bg-primary-color">
+        <h1 class="text-center display-4">Welcome to Heather's Guestbook!</h1><br>
+        <h2 class="text-center lead"><strong>Please Sign Below To Keep In Touch With Heather!</strong></h2>
+        <br>
+        <div class="container">
+            <a href="http://hmonatt.greenriverdev.com/305/guestbook/login-guest.php" class="links"><p><strong>Admin Page</strong></p></a>
+        </div>
+    </div>
+
+    <!-- Guestbook form -->
+    <form name="guestbookform" id="guestbookform" method="post" action="thankyou.php">
+
+        <!-- Contact Info -->
+        <fieldset class="form-group border p-2">
+            <legend>Contact Info</legend>
+
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" id="fname" name="fname">
+                <span class="d-none text-danger" id="err-fname">Please enter a first name</span>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control" id="lname" name="lname">
+                <span class="d-none text-danger" id="err-lname">Please enter a last name</span>
+            </div>
+            <div class="form-group">
+                <label for="jobtitle">Job Title:</label>
+                <input type="text" class="form-control" id="jobtitle" name="jobtitle">
+              <!--  <span class="d-none text-danger" id="err-jobtitle">Please enter a job title</span> -->
+            </div>
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <input type="text" class="form-control" id="company" name="company">
+              <!--  <span class="d-none text-danger" id="err-company">Please enter a company name</span> -->
+            </div>
+            <div class="form-group">
+                <label for="linkedIn">LinkedIn URL:</label>
+                <input type="text" class="form-control" id="linkedIn" name="linkedIn">
+                <span class="d-none text-danger" id="err-linkedIn">LinkedIn address must start with "http" and end with ".com"</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="text" class="form-control" id="email" name="email">
+                <span class="d-none text-danger" id="err-email">Please enter a valid email address (example@hotmail.com)</span>
+            </div>
+        </fieldset>
+
+        <!-- How We Met -->
+        <fieldset class="form-group border p-2">
+            <legend>How We Met</legend>
+
+            <select class="form-control" id="meet" name="meet" >
+                <option value='None'>How Did We Meet?</option>
+                <option value='Meetup'>Meetup</option>
+                <option value='Job Fair'>Job Fair</option>
+                <option value='School'>School</option>
+                <option value='Work'>Work</option>
+                <option value='Not Yet'>Have Not Met Yet</option>
+                <option value='Other:'>Other</option>
+            </select>
+            <span class="d-none text-danger" id="err-meet">Please select an option</span><br>
+            <div class="form-group">
+                <label for="other">Please Specify Other:</label>
+                <input type="text" class="form-control" id="other" name="other">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Mailing List -->
+        <fieldset class="form-group border p-2">
+            <legend>Mailing List</legend>
+                <div class="checkbox">
+                    <label><input type="checkbox" id="mailingListCheck" name="mailingListCheck" value="yes"> Please add me to your mailing list!</label>
+                    <br>
+                    <span class="d-none text-danger" id="err-mailList">Please provide your email</span>
+                </div><br>
+
+            <label>Please choose an email format:</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="mailListMethod" id="html" value="html">
+                <label class="form-check-label" for="html">HTML</label>
+
+            </div>
+            <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="mailListMethod" id="text" value="text">
+                <label class="form-check-label" for="text">Text</label>
+            </div><br>
+            <span class="d-none text-danger" id="err-mailListMethod">Please select an email format</span>
+
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input class="button" type="submit" value="Submit Form">
+        <br>
+        <br>
+        <div class="container">
+            <a href="http://hmonatt.greenriverdev.com/305/guestbook/login-guest.php" class="links"><p><strong>Admin Page</strong></p></a>
+        </div>
+        <br>
+        <br>
+
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="scripts/guestbook.js"></script>
+</body>
+</html>
